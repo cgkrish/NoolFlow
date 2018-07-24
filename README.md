@@ -1,11 +1,12 @@
-#  TDIOM(Training using Direct Input & Output Data Model) 100 times faster Neural Network model compare with traditonal backpropagation NN
+#  TDIOM(Training using Direct Input & Output Data Model) 100 times faster Neural Network model compare with traditional backpropagation NN
 
-The neural network is very popular nowdays and used to solve complex AI and ML problems. However, the neural network is very expensive to train due to the traditional complex backpropagation techniqueue. 
-Surprisingly, our new model uses very simple method to train the NN without any complex backpropagation method and achieve almost similar sucessful rate. 
+The neural network is very popular nowadays and used to solve complex AI and ML problems. However, the neural network is very expensive to train due to the traditional complex backpropagation techniqueue. 
+Surprisingly, our new model uses very simple method to train the NN without any complex backpropagation method and achieve almost similar successful rate. 
 In this model, we train each layer starting from first layer using input as output of pervious layer and output as mirror of training set output.
+
 1. For example, first layer has n1 neurons and output(Y) has ny dimension then convert ny dimension  output(Y) into n1 dimension vector:
  Y:ny-->Y:n1
- Here is simple algotham to convert  from output(Y) into n1 dimension vector:
+ Here is simple algorithm forconverting output(Y) into n1 dimension vector:
 
 ```python
 def mappedToSize(inputs, newSize):
@@ -76,7 +77,7 @@ def eval(X, W, B, layout, activations):
  Training time for backpropagation network : 10.833237171173096 Seconds
  Training time for this network  : 0.17676091194152832 Seconds
  
- Both are using same dimesion  of layers and same actionvation function.
+ Both are using same dimension of layers and same activation function.
  
  Prediction report for the BP Model :
  
