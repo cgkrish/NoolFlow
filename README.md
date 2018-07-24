@@ -7,6 +7,7 @@ In this model, we train each layer starting from first layer using input as outp
  Y:ny-->Y:n1
  Here is simple algotham to convert  from output(Y) into n1 dimension vector:
 
+'''
 def mappedToSize(inputs, newSize):
     outputs = np.zeros((inputs.shape[0], newSize) )
     m = inputs.shape[1]
@@ -19,6 +20,8 @@ def mappedToSize(inputs, newSize):
     w=normalize(w.T)
     #outputs = np.dot( inputs, w)
     return (outputs)
+    
+    '''
     
 2. Then, calculate weight w  for this layer from input(X) and mapped output(Ym)
   W = X dot Inverse(Ym) 
