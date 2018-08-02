@@ -1,6 +1,6 @@
-#  TDIOM(Training using Direct Input & Output Data Model) 100 times faster Neural Network model compare with traditional backpropagation NN
+#  LTOM(Layer Training by Output Mirror) 100 times faster Neural Network model compare with traditional backpropagation NN
 
-The neural network is very popular nowadays and used to solve complex AI and ML problems. However, the neural network is very expensive to train due to the traditional complex backpropagation techniqueue. 
+The neural network becomes very popular nowadays and is used to solve complex AI and ML problems. However, the neural network is very expensive to train due to the traditional complex backpropagation techniqueue. 
 Surprisingly, our new model uses very simple method to train the NN without any complex backpropagation method and achieve almost similar successful rate. 
 In this model, we train each layer starting from first layer using input as output of pervious layer and output as mirror of training set output.
 
